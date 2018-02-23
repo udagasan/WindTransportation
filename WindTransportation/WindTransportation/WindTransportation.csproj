@@ -80,6 +80,7 @@
     <Content Include="img\.DS_Store" />
     <Content Include="img\slider\.DS_Store" />
     <Content Include="sendemail.php" />
+    <Content Include="İnfo.txt" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
