@@ -94,7 +94,6 @@
     <Content Include="air.html" />
     <Content Include="blog-single.html" />
     <Content Include="blog.html" />
-    <Content Include="career.html" />
     <Content Include="contact.html" />
     <Content Include="css\animate.css" />
     <Content Include="css\blog.css" />
@@ -261,7 +260,6 @@
     <Content Include="shipping.html" />
     <Content Include="transportation.html" />
     <Content Include="trucking.html" />
-    <Content Include="typography.html" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
