@@ -157,7 +157,6 @@
     <Content Include="img\flags\united-kingdom.svg" />
     <Content Include="img\flags\united-states.svg" />
     <Content Include="img\grabbing.png" />
-    <Content Include="img\gradientbg.png" />
     <Content Include="img\intro-bg.jpg" />
     <Content Include="img\logo.png" />
     <Content Include="img\map-marker.png" />
