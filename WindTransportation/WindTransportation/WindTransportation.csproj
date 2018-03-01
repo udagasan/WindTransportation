@@ -66,6 +66,8 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="img\slider\panorama_19_7_dik_27.11.jpg" />
+    <Content Include="img\slider\slide-2-1.jpg" />
     <Content Include="packages.config" />
     <Content Include="fonts\flaticon\flaticon.eot" />
     <Content Include="fonts\flaticon\flaticon.ttf" />
