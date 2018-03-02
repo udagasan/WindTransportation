@@ -228,7 +228,6 @@
     <Content Include="img\trans.jpg" />
     <Content Include="img\zoomin.png" />
     <Content Include="index.html" />
-    <Content Include="index2.html" />
     <Content Include="job-post.html" />
     <Content Include="js\bootstrap.min.js" />
     <Content Include="js\classie.js" />
