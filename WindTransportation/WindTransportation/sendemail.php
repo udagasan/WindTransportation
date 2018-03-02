@@ -22,21 +22,21 @@
 
     if(empty($name)){
 
-        $result = array( 'response' => 'error', 'empty'=>'name', 'message'=>'<strong>Error!</strong> Name is empty.' );
+        $result = array( 'response' => 'error', 'empty'=>'name', 'message'=>'<strong>Error!</strong> Ýsim  boþ olamaz!.' );
         echo json_encode($result );
         die;
     } 
 
     if(empty($email)){
 
-        $result = array( 'response' => 'error', 'empty'=>'email', 'message'=>'<strong>Error!</strong> Email is empty.' );
+        $result = array( 'response' => 'error', 'empty'=>'email', 'message'=>'<strong>Error!</strong> Mail boþ olamaz .' );
         echo json_encode($result );
         die;
     } 
 
     if(empty($message)){
 
-         $result = array( 'response' => 'error', 'empty'=>'message', 'message'=>'<strong>Error!</strong> Message body is empty.' );
+         $result = array( 'response' => 'error', 'empty'=>'message', 'message'=>'<strong>Error!</strong> Lütfen göndereceðiniz mesajý yazýnýz.' );
          echo json_encode($result );
          die;
     }
@@ -65,9 +65,9 @@
     $contents =  strtr($templateContents, $templateTags);
 
     if ( mail( $to, $subject, $contents, $headers ) ) {
-        $result = array( 'response' => 'success', 'message'=>'<strong>Success!</strong> Mail Sent.' );
+        $result = array( 'response' => 'success', 'message'=>'<strong>Success!</strong> Talebiniz alýnmýþtýr. Teþekkür ederiz' );
     } else {
-        $result = array( 'response' => 'error', 'message'=>'<strong>Error!</strong> Cann\'t Send Mail.'  );
+        $result = array( 'response' => 'error', 'message'=>'<strong>Error!</strong> Mail gönderiminde hata oluþtu.'  );
     }
 
     echo json_encode( $result );
