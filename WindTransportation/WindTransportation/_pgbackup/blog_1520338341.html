@@ -7,7 +7,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1"> 
         <meta name="description" content=""> 
         <meta name="author" content=""> 
-        <title>Unship</title>         
+        <title>Unship Blog</title>         
         <!-- Web Fonts -->         
         <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600,700,900,200italic,300italic,400italic,600italic,700italic,900italic' rel='stylesheet' type='text/css'> 
         <!-- Bootstrap Core CSS -->         
@@ -29,11 +29,15 @@
         <!-- Main menu -->         
         <link href="css/menu.css" rel="stylesheet"> 
         <!-- Template Common Styles -->         
+        ///
         <link href="css/template.css" rel="stylesheet"> 
         <!-- Custom CSS -->         
         <link href="css/style.css" rel="stylesheet"> 
         <!-- Responsive CSS -->         
         <link href="css/responsive.css" rel="stylesheet"> 
+        <!-- Blog part -->         
+        <link href="css/YTPlayer.css" rel="stylesheet" media="screen"> 
+        <link href="css/blog.css" rel="stylesheet" media="screen"> 
         <script src="js/vendor/modernizr-2.8.1.min.js"></script>         
         <!-- HTML5 Shim and Respond.js for IE8 support of HTML5 elements and media queries -->         
         <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->         
@@ -113,7 +117,7 @@
                                 </div>                                 
                                 <div class="collapse navbar-collapse navbar-collapse"> 
                                     <ul class="nav navbar-nav navbar-right"> 
-                                        <li class="dropdown "> 
+                                        <li class="dropdown"> 
                                             <a href="index.html">Anasayfa <span class="fa"></span></a> 
                                         </li>                                         
                                         <li class="dropdown"> 
@@ -122,7 +126,7 @@
                                                 <div class="submenu-inner"> 
                                                     <ul class="dropdown-menu"> 
                                                         <li> 
-                                                            <a href="about.html">Hakkınızda</a> 
+                                                            <a href="about.html">Hakkımızda</a> 
                                                         </li>                                                         
                                                         <li>                                                              
 </li>                                                         
@@ -264,7 +268,7 @@
                                             <!-- /.megamenu-wrapper -->                                             
                                         </li>                                         
                                         <!-- /MEGA MENU -->                                         
-                                        <li> 
+                                        <li class="active"> 
                                             <a href="blog.html">Blog</a> 
                                         </li>                                         
                                         <li> 
@@ -279,84 +283,188 @@
                     </header>                     
                     <section class="page-title-section"> 
                         <div class="container"> 
-                            <div class="page-header-wrap"> 
-                                <div class="page-header"> 
-                                    <h1>İletişim Kur</h1> 
+                            <div class="row"> 
+                                <div class="col-xs-12"> 
+                                    <div class="page-header-wrap"> 
+                                        <div class="page-header"> 
+                                            <h1>Yaptıklarımızın kısa bir özeti</h1> 
+                                        </div>                                         
+                                        <ol class="breadcrumb"> 
+                                            <li>
+                                                <a href="#">Anasayfa</a>
+                                            </li>                                             
+                                            <li class="active">blog</li>                                             
+                                        </ol>                                         
+                                    </div>                                     
                                 </div>                                 
-                                <ol class="breadcrumb"> 
-                                    <li> 
-                                        <a href="#">Anasayfa</a> 
-                                    </li>                                     
-                                    <li class="active">İletişim</li>                                     
-                                </ol>                                 
                             </div>                             
                         </div>                         
                     </section>                     
-                    <section class="contact-info-section"> 
+                    <!-- blog-section -->                     
+                    <section class="blog-section section-content"> 
+                        <!-- container -->                         
                         <div class="container"> 
-                            <div class="text-center"> 
-                                <h2 class="section-title">Bir dokunuş kadar uzağınızdayız!</h2> 
-                                <span class="section-sub">&nbsp;24/7 Sizlere hizmet etmeye hazırız</span> 
-                            </div>                             
-                            <div class="row content-row"> 
-                                <div class="col-md-7"> 
-                                    <div class="contact-map"> 
-                                        <h3>İletişim Formu</h3> 
-                                        <form id="mainContact" action="sendemail.php" method="POST"> 
-                                            <div class="form-group"> 
-                                                <label for="name">Ad</label>                                                 
-                                                <input name="name" type="text" class="form-control" required="" placeholder=""> 
-                                            </div>                                             
-                                            <div class="form-group"> 
-                                                <font color="#9197a8">Mail Adresi</font> 
-                                                <br> 
-                                                <input name="email" type="email" class="form-control" required="" placeholder=""> 
-                                            </div>                                             
-                                            <div class="row"> 
-                                                <div class="col-md-6"> 
-                                                    <div class="form-group"> 
-                                                        <font color="#9197a8">Konu&nbsp;</font> 
-                                                        <br> 
-                                                        <input name="subject" type="text" class="form-control" required="" placeholder=""> 
-                                                    </div>                                                     
-                                                </div>                                                 
-                                                <div class="col-md-6"> 
-                                                    <div class="form-group"> 
-                                                        <font color="#9197a8">Telefon Numarası</font> 
-                                                        <br> 
-                                                        <input name="phone" type="text" class="form-control" placeholder=""> 
-                                                    </div>                                                     
+                            <!-- row -->                             
+                            <div class="row">
+                                <!-- posts-container -->                                 
+                                <div class="posts-container"> 
+                                    <div class="col-md-8 col-sm-8"> 
+                                        <article class="blog-post-wrapper"> 
+                                            <div class="figure sticky-post"> 
+                                                <div class="post-thumbnail"> 
+                                                    <img src="img/blog/blog-2.jpg" class="img-responsive" alt=""> 
+                                                    <div class="blog-post-overlay"></div>                                                     
+                                                    <a class="img-link" href="img/blog/blog-2.jpg"> <small> <img src="img/zoomin.png" alt="zoom"> </small> </a> 
                                                 </div>                                                 
                                             </div>                                             
-                                            <div class="form-group text-area"> 
-                                                <font color="#9197a8">Göndermek istediğiniz mesaj</font> 
-                                                <br> 
-                                                <textarea name="message" class="form-control" rows="6" required="" placeholder=""></textarea>                                                 
+                                            <header class="entry-header clearfix"> 
+                                                <aside></aside>                                                 
+                                                <h2 class="entry-title">Evden eve nakliyat</h2> 
+                                                <div class="entry-meta"> 
+                                                    <ul class="list-inline">Ankaranın bütün ilçelerinde evden eve nakliyat</ul>                                                     
+                                                </div>
+                                                <!-- .entry-meta -->                                                 
+                                            </header>
+                                            <!-- .entry-header -->                                             
+                                            <div class="entry-content"> 
+                                                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</p> 
+                                            </div>
+                                            <!-- .entry-content -->                                             
+                                            <footer class="entry-footer"> 
+                                                <hr> 
+                                                <a href="blog-single.html" class="btn btn-primary btn-sm readmore">Devam Et</a>
+                                            </footer>
+                                        </article>
+                                        <article class="blog-post-wrapper">
+                                            <div class="figure">
+                                                <div id="blog-post-carousel" class="carousel slide blog-carousel" data-ride="carousel">
+                                                    <div class="carousel-inner">
+                                                        <div class="item active">
+                                                            <div class="post-thumbnail">
+                                                                <img class="img-responsive" src="img/blog/blog-1.jpg" alt=""> 
+                                                            </div>                                                             
+                                                        </div>                                                         
+                                                        <div class="item"> 
+                                                            <div class="post-thumbnail"> 
+                                                                <img class="img-responsive" src="img/blog/blog-2.jpg" alt=""> 
+                                                            </div>                                                             
+                                                        </div>                                                         
+                                                        <div class="item"> 
+                                                            <div class="post-thumbnail"> 
+                                                                <img class="img-responsive" src="img/blog/blog-3.jpg" alt=""> 
+                                                            </div>                                                             
+                                                        </div>                                                         
+                                                    </div>                                                     
+                                                    <!-- Controls -->                                                     
+                                                    <a class="left carousel-control" href="#blog-post-carousel" data-slide="prev"> <i class="fa fa-angle-left"></i> </a> 
+                                                    <a class="right carousel-control" href="#blog-post-carousel" data-slide="next"> <i class="fa fa-angle-right"></i> </a> 
+                                                </div>                                                 
+                                            </div>
+                                            <!-- /.figure -->                                             
+                                            <header class="entry-header clearfix">
+                                                <aside> 
+                                                    <div class="posted-date pull-left">&nbsp; 
+                                                        <span style="color: rgb(123, 138, 151); font-size: 16px;">&nbsp;</span>
+                                                        <span style="color: rgb(96, 102, 118); font-size: 30px;">Şehieler arası nakliyat</span>
+                                                    </div>
+                                                </aside>                                                 
+                                                <div class="entry-meta"> 
+                                                    <ul class="list-inline">
+                                                        <span style="font-size: 16px;"><ul class="list-inline">
+                                                                <span style="font-size: 16px;"><br></span>
+                                                            </ul></span>
+                                                    </ul>
+                                                    <p><ul class="list-inline">
+                                                            <span style="font-size: 16px;">Energistically create long-term high-impact content for goal-oriented infomediaries.
+                                                Dynamically customize efficient vortals with efficient scenarios. Distinctively promote integrated.</span>
+                                                        </ul></p>
+                                                </div>
+                                            </header>
+                                            <!-- .entry-content -->                                             
+                                            <footer class="entry-footer"> 
+                                                <a href="blog-single.html" class="btn btn-primary btn-sm readmore">Devam Et</a>
+                                            </footer>                                             
+                                        </article>
+                                        <!-- /.blog-post-wrapper -->                                         
+                                        <article class="blog-post-wrapper"> 
+                                            <div class="figure"> 
+                                                <div class="post-thumbnail"> 
+                                                    <img src="img/blog/blog-3.jpg" class="img-responsive" alt=""> 
+                                                    <div class="blog-post-overlay"></div>                                                     
+                                                    <a class="img-link" href="img/blog/blog-3.jpg"> <small><img src="img/zoomin.png" alt="zoom"></small> </a> 
+                                                </div>                                                 
                                             </div>                                             
-                                            <button type="submit" class="btn btn-primary">Send Message</button>                                             
-                                        </form>                                         
+                                            <header class="entry-header clearfix"> 
+                                                <aside>
+                                                    <br>
+                                                </aside>                                                 
+                                                <h2 class="entry-title"><a href="blog-single.html" rel="">P</a>aketleme montaj ve demontaj işlemleri</h2> 
+                                                <div class="entry-meta"> 
+                                                    <ul class="list-inline">
+                                                        <span style="font-size: 16px;">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</span>
+                                                        <br>
+                                                    </ul>
+                                                </div>
+                                            </header>
+                                            <!-- .entry-content -->                                             
+                                            <footer class="entry-footer"> 
+                                                <hr> 
+                                                <a href="blog-single.html" class="btn btn-primary btn-sm readmore">Devam Et</a>
+                                            </footer>
+                                        </article>
+                                        <article class="blog-post-wrapper"> 
+                                            <h2 class="entry-title"><a href="blog-single.html" rel="">D</a>epolama</h2> 
+                                            <div class="entry-meta"> 
+                                                <ul class="list-inline">
+                                                    <span style="font-size: 16px;">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</span>
+                                                    <br>
+                                                </ul>
+                                            </div>
+                                            <!-- .entry-content -->                                             
+                                            <footer class="entry-footer"> 
+                                                <a href="blog-single.html" class="btn btn-primary btn-sm readmore">Devam Et</a>
+                                                <a href="#" title="Like this" style="background-color: rgb(255, 255, 255);">&nbsp;</a>
+                                            </footer>
+                                        </article>
+                                        <article class="blog-post-wrapper"> 
+                                            <div class="entry-content"> 
+                                                <blockquote> 
+                                                    <a href="blog-single.html"> 
+                                                        <p>“Unutma, bir şeyin yapılamaz olduğunu düşünerek uyursan, başkasının o şeyi yaparken çıkardığı gürültüyle uyanırsın.” Konfüçyüs<i class="fa fa-quote-right"></i> </p> 
+                                                        <footer>Konfüçyüsn Doe</footer>
+                                                    </a>
+                                                </blockquote>
+                                            </div>
+                                        </article>
+                                        <article class="blog-post-wrapper"> 
+                                            <div class="entry-content"> 
+                                                <a class="css-post-link" href="blog-single.html"> 
+                                                    <p> 
+                                                    “Bir şey yap, güzel olsun. Çok mu zor? O vakit güzel bir şey söyle. Dilin mi dönmüyor? Güzel bir şey gör veya güzel bir şey yaz. Beceremez misin? Öyleyse güzel bir şeye başla. Ama hep güzel şeyler olsun. Çünkü her insan ölecek yaşta.” </p>
+                                                    <footer>Konfüçyüs</footer>                                                     
+                                                </a>                                                 
+                                            </div>
+                                            <!-- .entry-content -->                                             
+                                        </article>                                         
+                                        <!-- PAGINATION -->                                         
+                                        <section class="pagination-wrap"> 
+</section>                                         
+                                        <!-- END PAGINATION -->                                         
+                                        <div class="clearfix"></div>                                         
                                     </div>                                     
+                                    <!-- /col-md-8 -->                                     
+                                    <div class="col-md-4 col-sm-4"> 
+                                        <!-- /.sidebar -->                                         
+                                    </div>
+                                    <!-- /.col -->                                     
                                 </div>                                 
-                                <div class="col-md-5"> 
-                                    <div class="contact-info"> 
-                                        <h3>Ofis Adresimiz</h3> 
-                                        <address>Senatoryum Caddesi  197/A, 06290 Keçiören/Ankara<br> 
-                                        Telefon: 0539 454 14 40<br> 
-                                        Email :&nbsp;<a href="file:///D:/Users/udagasan/Source/Repos/WindTransportation/WindTransportation/WindTransportation/contact.html?pgedit=1#" spellcheck="true" data-medium-editor-element="true" role="textbox" aria-multiline="true" data-medium-editor-editor-index="4" medium-editor-index="26e46aa7-986f-a286-343e-cf16c5189624" data-placeholder="Type your text" data-medium-focused="true"> keciorenruzgarnakliyat@gmail.com</a><br></address> 
-                                    </div>                                     
-                                    <!-- /.contact-info -->                                     
-                                    <div class="contact-map"> 
-                                        <h3>Haritada yerimiz</h3> 
-                                        <div id="contactMap"></div>                                         
-                                    </div>                                     
-                                    <!-- /.contact-info -->                                     
-                                </div>                                 
-                            </div>                             
-                        </div>                         
-                    </section>                     
-                    <!-- cta start -->                     
-                    <!-- /.cta-section -->                     
-                    <!-- cta end -->                     
+                                <!-- /posts-container -->
+                            </div>
+                            <!-- /row -->                             
+                        </div>
+                        <!-- /container -->                         
+                    </section>
+                    <!-- /blog-section -->                     
                     <!-- footer-widget-section start -->                     
                     <section class="footer-widget-section section-padding"> 
                         <div class="container"> 
@@ -413,13 +521,13 @@
                                 </div>                                 
                                 <!-- /.col-md-4 -->                                 
                                 <div class="col-md-4 col-sm-4"> 
-                                    <div class="footer-widget"> 
+                                    <div class="footer-widget">
                                         <h3><br><h3>Keçiören evden eve nakliyat</h3></h3> 
                                         <form class="newsletter-form"> 
                                             <div class="form-group"> 
                                                 <img src="img/logo.png" alt=""> 
                                             </div>                                             
-                                        </form>                                         
+                                        </form>
                                     </div>                                     
                                     <!-- /.footer-widget -->                                     
                                 </div>                                 
