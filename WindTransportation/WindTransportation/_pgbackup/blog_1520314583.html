@@ -7,7 +7,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1"> 
         <meta name="description" content=""> 
         <meta name="author" content=""> 
-        <title>Unship</title>         
+        <title>Unship Blog</title>         
         <!-- Web Fonts -->         
         <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600,700,900,200italic,300italic,400italic,600italic,700italic,900italic' rel='stylesheet' type='text/css'> 
         <!-- Bootstrap Core CSS -->         
@@ -29,11 +29,15 @@
         <!-- Main menu -->         
         <link href="css/menu.css" rel="stylesheet"> 
         <!-- Template Common Styles -->         
+        ///
         <link href="css/template.css" rel="stylesheet"> 
         <!-- Custom CSS -->         
         <link href="css/style.css" rel="stylesheet"> 
         <!-- Responsive CSS -->         
         <link href="css/responsive.css" rel="stylesheet"> 
+        <!-- Blog part -->         
+        <link href="css/YTPlayer.css" rel="stylesheet" media="screen"> 
+        <link href="css/blog.css" rel="stylesheet" media="screen"> 
         <script src="js/vendor/modernizr-2.8.1.min.js"></script>         
         <!-- HTML5 Shim and Respond.js for IE8 support of HTML5 elements and media queries -->         
         <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->         
@@ -103,9 +107,9 @@
                         <nav class="navbar navbar-default" role="navigation"> 
                             <div class="container mainnav"> 
                                 <div class="navbar-header"> 
-                                    <h1 class="logo">  <a class="navbar-brand" href="index.html"> 
+                                    <h1 class="logo"> <a class="navbar-brand" href="index.html"> 
                                             <img src="img/logo.png" alt=""> 
-                                        </a>  </h1> 
+                                        </a> </h1> 
                                     <button type="button" class="navbar-toggle collapsed pull-right"> 
                                         <span class="sr-only">Toggle navigation</span> 
                                         <i class="fa fa-bars"></i> 
@@ -113,7 +117,7 @@
                                 </div>                                 
                                 <div class="collapse navbar-collapse navbar-collapse"> 
                                     <ul class="nav navbar-nav navbar-right"> 
-                                        <li class="dropdown "> 
+                                        <li class="dropdown"> 
                                             <a href="index.html">Anasayfa <span class="fa"></span></a> 
                                         </li>                                         
                                         <li class="dropdown"> 
@@ -228,7 +232,7 @@
                                             <!-- /.megamenu-wrapper -->                                             
                                         </li>                                         
                                         <!-- /MEGA MENU -->                                         
-                                        <li> 
+                                        <li class="active"> 
                                             <a href="blog.html">Blog</a> 
                                         </li>                                         
                                         <li> 
@@ -246,188 +250,185 @@
                             <div class="row"> 
                                 <div class="col-xs-12"> 
                                     <div class="page-header-wrap"> 
-                                        <div class="page-header active"> 
-                                            <h1>Marine transportations</h1> 
+                                        <div class="page-header"> 
+                                            <h1>Standard blog</h1> 
                                         </div>                                         
                                         <ol class="breadcrumb"> 
                                             <li>
-                                                <a href="#">Home</a>
+                                                <a href="#">Anasayfa</a>
                                             </li>                                             
-                                            <li class="active">Marine transportations</li>                                             
+                                            <li class="active">blog</li>                                             
                                         </ol>                                         
                                     </div>                                     
                                 </div>                                 
                             </div>                             
                         </div>                         
                     </section>                     
-                    <!-- Single-Service-Start -->                     
-                    <section class="single-service-contents"> 
+                    <!-- blog-section -->                     
+                    <section class="blog-section section-content"> 
+                        <!-- container -->                         
                         <div class="container"> 
-                            <div class="row"> 
-                                <div class="col-md-3 col-sm-5 col-xs-12"> 
-                                    <div class="service-sidebar sidebar-wrapper"> 
-                                        <div class="widget"> 
-                                            <h2 class="widget-title">Services</h2> 
-                                            <ul class="service-list"> 
-                                                <li>
-                                                    <a href="air.html" class="icon-air">Air transportation</a>
-                                                </li>                                                 
-                                                <li class="active">
-                                                    <a href="marine.html" class="icon-marine">Marine transportation</a>
-                                                </li>                                                 
-                                                <li>
-                                                    <a href="moving.html" class="icon-store">Moving &amp; storage</a>
-                                                </li>                                                 
-                                                <li>
-                                                    <a href="shipping.html" class="icon-shipping">Shipping &amp; operations</a>
-                                                </li>                                                 
-                                                <li>
-                                                    <a href="transportation.html" class="icon-transportation">Transportation logistics</a>
-                                                </li>                                                 
-                                                <li>
-                                                    <a href="trucking.html" class="icon-trucking">Trucking</a>
-                                                </li>                                                 
-                                            </ul>                                             
-                                        </div>
-                                        <!-- /.widget -->                                         
-                                        <div class="widget"> 
-                                            <div class="download-wrap company"> 
-                                                <a href="#">Company profile <span>Download</span><i class="fa fa-download"></i></a> 
+                            <!-- row -->                             
+                            <div class="row">
+                                <!-- posts-container -->                                 
+                                <div class="posts-container"> 
+                                    <div class="col-md-8 col-sm-8"> 
+                                        <article class="blog-post-wrapper"> 
+                                            <div class="figure sticky-post"> 
+                                                <div class="post-thumbnail"> 
+                                                    <img src="img/blog/blog-2.jpg" class="img-responsive" alt=""> 
+                                                    <div class="blog-post-overlay"></div>                                                     
+                                                    <a class="img-link" href="img/blog/blog-2.jpg"> <small> <img src="img/zoomin.png" alt="zoom"> </small> </a> 
+                                                </div>                                                 
                                             </div>                                             
-
-                                            <!-- /.download-wrap -->                                             
-                                            <div class="download-wrap annual"> 
-                                                <a href="#">Annual Report <span>Download</span><i class="fa fa-download"></i></a> 
-                                            </div>                                             
-
-                                            <!-- /.download-wrap -->                                             
-                                            <div class="download-wrap brochure"> 
-                                                <a href="#">Corporate Brochure <span>Download</span><i class="fa fa-download"></i></a> 
-                                            </div>                                             
-
-                                            <!-- /.download-wrap -->                                             
-                                        </div>
-                                        <!-- /.widget -->                                         
-                                        <div class="widget"> 
-                                            <h2 class="widget-title">Office Hours</h2> 
-                                            <div class="textwidget"> 
-                                                <p> 
-                                                Monday -
-                                                Friday: 9:00 - 18:00<br> 
-                                                Saturday: 9:00 - 2:00<br> 
-                                                Holidays: 9:00 - 12:00 </p> 
-                                            </div>                                             
-                                        </div>
-                                        <!-- /.widget -->                                         
-                                    </div>
-                                    <!-- /.sidebar-wrapper -->                                     
-                                </div>
-                                <!-- /.col -->                                 
-                                <div class="col-md-9 col-sm-7 col-xs-12"> 
-                                    <div class="single-service-content"> 
-                                        <h2>Enthusiastically parallel</h2> 
-                                        <p>Synergistically grow optimal total linkage after best-of-breed channels. Continually redefine B2C methodologies after equity invested channels. Dramatically drive just in time bandwidth rather than enterprise potentialities.Dramatically drive just in time bandwidth rather than enterprise potentialities.Dramatically drive just in time bandwidth.Continually redefine B2C methodologies after equity invested channels. Dramatically drive just in time bandwidth rather than enterprise potentialities.</p>
-                                        <br> 
-                                        <p>Synergistically grow optimal total linkage after best-of-breed channels. Continually redefine B2C methodologies after equity invested channels. Dramatically drive just in time bandwidth rather than enterprise potentialities.Continually redefine B2C methodologies after equity invested channels. Dramatically drive just in time bandwidth rather than enterprise potentialities.</p> 
-                                        <br> 
-                                        <div class="row"> 
-                                            <div class="col-sm-7 col-xs-12"> 
-                                                <h3>Synergistically envisioneer effective opportunities</h3> 
-                                                <p>Synergistically grow optimal total linkage after best-of-breed channels. Continually redefine B2C methodologies after equity invested channels. Dramatically drive just in time bandwidth rather than enterprise potentialities.Credibly facilitate emerging niches whereas user-centric "outside the box" thinking. Objectively deploy reliable communities vis-a-vis holistic web-readiness.</p>
-                                                <br> 
-                                                <p>Objectively deploy reliable communities vis-a-vis holistic web-readiness.Intrinsicly strategize exceptional mindshare vis-a-vis functionalized imperatives.Energistically incentivize innovative convergence through wireless ideas.</p> 
+                                            <header class="entry-header clearfix"> 
+                                                <aside></aside>                                                 
+                                                <h2 class="entry-title">Evden eve nakliyat</h2> 
+                                                <div class="entry-meta"> 
+                                                    <ul class="list-inline">Ankaranın bütün ilçelerinde evden eve nakliyat</ul>                                                     
+                                                </div>
+                                                <!-- .entry-meta -->                                                 
+                                            </header>
+                                            <!-- .entry-header -->                                             
+                                            <div class="entry-content"> 
+                                                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</p> 
                                             </div>
-                                            <!-- /.col -->                                             
-                                            <div class="col-sm-5 col-xs-12"> 
-                                                <div class="single-service-thumb"> 
-                                                    <img src="img/service/marinethumb.jpg" alt="image" /> 
+                                            <!-- .entry-content -->                                             
+                                            <footer class="entry-footer"> 
+                                                <hr> 
+                                                <a href="blog-single.html" class="btn btn-primary btn-sm readmore">Devam Et</a>
+                                            </footer>
+                                        </article>
+                                        <article class="blog-post-wrapper">
+                                            <div class="figure">
+                                                <div id="blog-post-carousel" class="carousel slide blog-carousel" data-ride="carousel">
+                                                    <div class="carousel-inner">
+                                                        <div class="item active">
+                                                            <div class="post-thumbnail">
+                                                                <img class="img-responsive" src="img/blog/blog-1.jpg" alt=""> 
+                                                            </div>                                                             
+                                                        </div>                                                         
+                                                        <div class="item"> 
+                                                            <div class="post-thumbnail"> 
+                                                                <img class="img-responsive" src="img/blog/blog-2.jpg" alt=""> 
+                                                            </div>                                                             
+                                                        </div>                                                         
+                                                        <div class="item"> 
+                                                            <div class="post-thumbnail"> 
+                                                                <img class="img-responsive" src="img/blog/blog-3.jpg" alt=""> 
+                                                            </div>                                                             
+                                                        </div>                                                         
+                                                    </div>                                                     
+                                                    <!-- Controls -->                                                     
+                                                    <a class="left carousel-control" href="#blog-post-carousel" data-slide="prev"> <i class="fa fa-angle-left"></i> </a> 
+                                                    <a class="right carousel-control" href="#blog-post-carousel" data-slide="next"> <i class="fa fa-angle-right"></i> </a> 
+                                                </div>                                                 
+                                            </div>
+                                            <!-- /.figure -->                                             
+                                            <header class="entry-header clearfix">
+                                                <aside> 
+                                                    <div class="posted-date pull-left">&nbsp; 
+                                                        <span style="color: rgb(123, 138, 151); font-size: 16px;">&nbsp;</span>
+                                                        <span style="color: rgb(96, 102, 118); font-size: 30px;">Şehieler arası nakliyat</span>
+                                                    </div>
+                                                </aside>                                                 
+                                                <div class="entry-meta"> 
+                                                    <ul class="list-inline">
+                                                        <span style="font-size: 16px;"><ul class="list-inline">
+                                                                <span style="font-size: 16px;"><br></span>
+                                                            </ul></span>
+                                                    </ul>
+                                                    <p><ul class="list-inline">
+                                                            <span style="font-size: 16px;">Energistically create long-term high-impact content for goal-oriented infomediaries.
+                                                Dynamically customize efficient vortals with efficient scenarios. Distinctively promote integrated.</span>
+                                                        </ul></p>
+                                                </div>
+                                            </header>
+                                            <!-- .entry-content -->                                             
+                                            <footer class="entry-footer"> 
+                                                <a href="blog-single.html" class="btn btn-primary btn-sm readmore">Devam Et</a>
+                                            </footer>                                             
+                                        </article>
+                                        <!-- /.blog-post-wrapper -->                                         
+                                        <article class="blog-post-wrapper"> 
+                                            <div class="figure"> 
+                                                <div class="post-thumbnail"> 
+                                                    <img src="img/blog/blog-3.jpg" class="img-responsive" alt=""> 
+                                                    <div class="blog-post-overlay"></div>                                                     
+                                                    <a class="img-link" href="img/blog/blog-3.jpg"> <small><img src="img/zoomin.png" alt="zoom"></small> </a> 
                                                 </div>                                                 
                                             </div>                                             
-                                        </div>
-                                        <!-- /.row -->                                         
-                                    </div>
-                                    <!-- /.single-service-content -->                                     
-                                </div>
-                                <!-- /.col -->                                 
-                            </div>
-                            <!-- /.row -->                             
-                        </div>
-                        <!-- /.container -->                         
-                    </section>                     
-                    <!-- Single-Service-End-->                     
-                    <!-- cta start -->                     
-                    <section class="cta-section"> 
-                        <div class="container text-center"> 
-                            <a data-toggle="modal" data-target="#quoteModal" href="#" class="btn btn-primary quote-btn">Get a Quote</a> 
-                            <!-- Modal -->                             
-                            <div class="modal fade" id="quoteModal" tabindex="-1" role="dialog" aria-labelledby="quoteModalLabel" aria-hidden="true"> 
-                                <div class="modal-dialog modal-lg"> 
-                                    <div class="modal-content"> 
-                                        <div class="modal-header"> 
-                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                                <span aria-hidden="true">&times;</span>
-                                            </button>                                             
-                                            <h4 class="modal-title" id="quoteModalLabel">Request a rate for the shipping of your goods.</h4> 
-                                        </div>                                         
-                                        <div class="modal-body"> 
-                                            <form id="contactForm" action="sendemail.php" method="POST"> 
-                                                <div class="row"> 
-                                                    <div class="col-md-6"> 
-                                                        <div class="form-group"> 
-                                                            <label for="name">Name</label>                                                             
-                                                            <input id="name" name="name" type="text" class="form-control" required="" placeholder=""> 
-                                                        </div>                                                         
-                                                    </div>                                                     
-                                                    <div class="col-md-6"> 
-                                                        <div class="form-group"> 
-                                                            <label for="company">Company Name</label>                                                             
-                                                            <input id="company" name="company" type="text" class="form-control" placeholder=""> 
-                                                        </div>                                                         
-                                                    </div>                                                     
-                                                </div>                                                 
-                                                <div class="row"> 
-                                                    <div class="col-md-6"> 
-                                                        <div class="form-group"> 
-                                                            <label for="phone">Phone Number</label>                                                             
-                                                            <input id="phone" name="phone" type="text" class="form-control" placeholder=""> 
-                                                        </div>                                                         
-                                                    </div>                                                     
-                                                    <div class="col-md-6"> 
-                                                        <div class="form-group"> 
-                                                            <label for="email">Email address</label>                                                             
-                                                            <input id="email" name="email" type="email" class="form-control" required="" placeholder=""> 
-                                                        </div>                                                         
-                                                    </div>                                                     
-                                                </div>                                                 
-                                                <div class="row"> 
-                                                    <div class="col-md-6"> 
-                                                        <div class="form-group"> 
-                                                            <label for="city">City Name</label>                                                             
-                                                            <input id="city" name="city" type="text" class="form-control" placeholder=""> 
-                                                        </div>                                                         
-                                                    </div>                                                     
-                                                    <div class="col-md-6"> 
-                                                        <div class="form-group"> 
-                                                            <label for="subject">Subject</label>                                                             
-                                                            <input id="subject" name="subject" type="text" class="form-control" required="" placeholder=""> 
-                                                        </div>                                                         
-                                                    </div>                                                     
-                                                </div>                                                 
-                                                <div class="form-group text-area"> 
-                                                    <label for="message">Your Message</label>                                                     
-                                                    <textarea id="message" name="message" class="form-control" rows="6" required="" placeholder=""></textarea>                                                     
-                                                </div>                                                 
-                                                <button type="submit" class="btn btn-primary">Send Message</button>                                                 
-                                            </form>                                             
-                                        </div>                                         
+                                            <header class="entry-header clearfix"> 
+                                                <aside>
+                                                    <br>
+                                                </aside>                                                 
+                                                <h2 class="entry-title"><a href="blog-single.html" rel="">P</a>aketleme montaj ve demontaj işlemleri</h2> 
+                                                <div class="entry-meta"> 
+                                                    <ul class="list-inline">
+                                                        <span style="font-size: 16px;">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</span>
+                                                        <br>
+                                                    </ul>
+                                                </div>
+                                            </header>
+                                            <!-- .entry-content -->                                             
+                                            <footer class="entry-footer"> 
+                                                <hr> 
+                                                <a href="blog-single.html" class="btn btn-primary btn-sm readmore">Devam Et</a>
+                                            </footer>
+                                        </article>
+                                        <article class="blog-post-wrapper"> 
+                                            <h2 class="entry-title"><a href="blog-single.html" rel="">D</a>epolama</h2> 
+                                            <div class="entry-meta"> 
+                                                <ul class="list-inline">
+                                                    <span style="font-size: 16px;">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</span>
+                                                    <br>
+                                                </ul>
+                                            </div>
+                                            <!-- .entry-content -->                                             
+                                            <footer class="entry-footer"> 
+                                                <a href="blog-single.html" class="btn btn-primary btn-sm readmore">Devam Et</a>
+                                                <a href="#" title="Like this" style="background-color: rgb(255, 255, 255);">&nbsp;</a>
+                                            </footer>
+                                        </article>
+                                        <article class="blog-post-wrapper"> 
+                                            <div class="entry-content"> 
+                                                <blockquote> 
+                                                    <a href="blog-single.html"> 
+                                                        <p>“Unutma, bir şeyin yapılamaz olduğunu düşünerek uyursan, başkasının o şeyi yaparken çıkardığı gürültüyle uyanırsın.” Konfüçyüs<i class="fa fa-quote-right"></i> </p> 
+                                                        <footer>Konfüçyüsn Doe</footer>
+                                                    </a>
+                                                </blockquote>
+                                            </div>
+                                        </article>
+                                        <article class="blog-post-wrapper"> 
+                                            <div class="entry-content"> 
+                                                <a class="css-post-link" href="blog-single.html"> 
+                                                    <p> 
+                                                    “Bir şey yap, güzel olsun. Çok mu zor? O vakit güzel bir şey söyle. Dilin mi dönmüyor? Güzel bir şey gör veya güzel bir şey yaz. Beceremez misin? Öyleyse güzel bir şeye başla. Ama hep güzel şeyler olsun. Çünkü her insan ölecek yaşta.” </p>
+                                                    <footer>Konfüçyüs</footer>                                                     
+                                                </a>                                                 
+                                            </div>
+                                            <!-- .entry-content -->                                             
+                                        </article>                                         
+                                        <!-- PAGINATION -->                                         
+                                        <section class="pagination-wrap"> 
+</section>                                         
+                                        <!-- END PAGINATION -->                                         
+                                        <div class="clearfix"></div>                                         
                                     </div>                                     
+                                    <!-- /col-md-8 -->                                     
+                                    <div class="col-md-4 col-sm-4"> 
+                                        <!-- /.sidebar -->                                         
+                                    </div>
+                                    <!-- /.col -->                                     
                                 </div>                                 
-                            </div>                             
+                                <!-- /posts-container -->
+                            </div>
+                            <!-- /row -->                             
                         </div>
-                        <!-- /.container -->                         
+                        <!-- /container -->                         
                     </section>
-                    <!-- /.cta-section -->                     
-                    <!-- cta end -->                     
+                    <!-- /blog-section -->                     
                     <!-- footer-widget-section start -->                     
                     <section class="footer-widget-section section-padding"> 
                         <div class="container"> 
@@ -438,7 +439,7 @@
                                         <address> 
                                         Senatoryum Caddesi&nbsp; 197/A, 06290 Keçiören/Ankara<br><div style="text-align: center;"> 
                                                 <font color="#ffffff"></font> 
-                                            </div><span class="tel">&nbsp;<h3 href="file:///D:/Users/udagasan/Source/Repos/WindTransportation/WindTransportation/WindTransportation/index.html?pgedit=1#" spellcheck="true" data-medium-editor-element="true" role="textbox" aria-multiline="true" data-medium-editor-editor-index="4" medium-editor-index="94c1d4ee-2319-7d51-4a1c-5c42563cabdc" data-placeholder="Type your text" data-medium-focused="true" style="background-color: rgb(251, 252, 253);">0 539 454 14 40</h3></span>  </address> 
+                                            </div><span class="tel">&nbsp;<h3 href="file:///D:/Users/udagasan/Source/Repos/WindTransportation/WindTransportation/WindTransportation/index.html?pgedit=1#" spellcheck="true" data-medium-editor-element="true" role="textbox" aria-multiline="true" data-medium-editor-editor-index="4" medium-editor-index="94c1d4ee-2319-7d51-4a1c-5c42563cabdc" data-placeholder="Type your text" data-medium-focused="true" style="background-color: rgb(251, 252, 253);">0 539 454 14 40</h3></span> </address> 
                                         <!-- Modal -->                                         
                                         <div class="modal fade" id="cssMapModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" style="display: none;"> 
                                             <div class="modal-dialog modal-lg"> 
@@ -485,7 +486,7 @@
                                 <!-- /.col-md-4 -->                                 
                                 <div class="col-md-4 col-sm-4"> 
                                     <div class="footer-widget"> 
-                                        <h3><br><h3>Keçiören evden eve nakliyat</h3></h3> 
+                                        <h3><br><br></h3> 
                                         <form class="newsletter-form"> 
                                             <div class="form-group"> 
                                                 <img src="img/logo.png" alt=""> 
