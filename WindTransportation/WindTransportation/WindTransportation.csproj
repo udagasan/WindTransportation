@@ -94,7 +94,6 @@
     <Content Include="about-member.html" />
     <Content Include="about.html" />
     <Content Include="air.html" />
-    <Content Include="blog-single.html" />
     <Content Include="blog.html" />
     <Content Include="contact.html" />
     <Content Include="css\animate.css" />
