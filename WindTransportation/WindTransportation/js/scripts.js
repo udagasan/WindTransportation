@@ -64,13 +64,13 @@ jQuery(function ($) {
     // -------------------------------------------------------------
 
     $(function () {
-        $('a[href="#search"]').on('click', function(event) {
+        $('a[href="#search"]').on('click', function (event) {
             event.preventDefault();
             $('#search').addClass('open');
             $('#search > form > input[type="search"]').focus();
         });
 
-        $('#search, #search button.close').on('click keyup', function(event) {
+        $('#search, #search button.close').on('click keyup', function (event) {
             if (event.target == this || event.target.className == 'close' || event.keyCode == 27) {
                 $(this).removeClass('open');
             }
@@ -88,12 +88,12 @@ jQuery(function ($) {
     (function () {
         $('.img-link').magnificPopup({
 
-        gallery: {
-          enabled: true
-        },
-        removalDelay: 300, // Delay in milliseconds before popup is removed
-        mainClass: 'mfp-with-zoom', // this class is for CSS animation below
-        type:'image'
+            gallery: {
+                enabled: true
+            },
+            removalDelay: 300, // Delay in milliseconds before popup is removed
+            mainClass: 'mfp-with-zoom', // this class is for CSS animation below
+            type: 'image'
 
         });
     }());
@@ -103,10 +103,10 @@ jQuery(function ($) {
     // Language Select JS
     // -------------------------------------------------------------
 
-    (function() {
-        [].slice.call( document.querySelectorAll( 'select.cs-select' ) ).forEach( function(el) {
+    (function () {
+        [].slice.call(document.querySelectorAll('select.cs-select')).forEach(function (el) {
             new SelectFx(el);
-        } );
+        });
     })();
 
 
@@ -114,23 +114,23 @@ jQuery(function ($) {
     // OffCanvas
     // -------------------------------------------------------------
 
-   (function () {
+    (function () {
         $('button.navbar-toggle').HippoOffCanvasMenu({
 
-        documentWrapper: '#st-container',
-        contentWrapper : '.st-content',
-        position       : 'hippo-offcanvas-left',    // class name
-        // opener         : 'st-menu-open',            // class name
-        effect         : 'slide-in-on-top',             // class name
-        closeButton    : '#off-canvas-close-btn',
-        menuWrapper    : '.offcanvas-menu',                 // class name below-pusher
-        documentPusher : '.st-pusher'
+            documentWrapper: '#st-container',
+            contentWrapper: '.st-content',
+            position: 'hippo-offcanvas-left',    // class name
+            // opener         : 'st-menu-open',            // class name
+            effect: 'slide-in-on-top',             // class name
+            closeButton: '#off-canvas-close-btn',
+            menuWrapper: '.offcanvas-menu',                 // class name below-pusher
+            documentPusher: '.st-pusher'
 
         });
         var ico = $('<i class="fa fa-caret-right"></i>');
         $('#offcanvasMenu li:has(ul) > a').append(ico);
 
-        $('#offcanvasMenu > li:has(ul)').on('click',function(){
+        $('#offcanvasMenu > li:has(ul)').on('click', function () {
             $(this).toggleClass('open');
         });
     }());
@@ -144,17 +144,17 @@ jQuery(function ($) {
     (function () {
 
         $('.partner-carousel').owlCarousel({
-            loop:true,
-            margin:15,
-            responsive:{
-                0:{
-                    items:2
+            loop: true,
+            margin: 15,
+            responsive: {
+                0: {
+                    items: 2
                 },
-                600:{
-                    items:3
+                600: {
+                    items: 3
                 },
-                1000:{
-                    items:6
+                1000: {
+                    items: 6
                 }
             }
         })
@@ -165,12 +165,12 @@ jQuery(function ($) {
         owl.owlCarousel();
 
         // Go to the next item
-        $('.partner-carousel-navigation .next').on('click', function() {
+        $('.partner-carousel-navigation .next').on('click', function () {
             owl.trigger('next.owl.carousel');
         })
 
         // Go to the previous item
-        $('.partner-carousel-navigation .prev').on('click', function(){
+        $('.partner-carousel-navigation .prev').on('click', function () {
             owl.trigger('prev.owl.carousel', [300]);
         });
 
@@ -182,7 +182,7 @@ jQuery(function ($) {
     //-------------------------------------------------------
     // counter
     //-------------------------------------------------------
-    $('.count-description').bind('inview', function(event, visible, visiblePartX, visiblePartY) {
+    $('.count-description').bind('inview', function (event, visible, visiblePartX, visiblePartY) {
         if (visible) {
             $(this).find('.timer').each(function () {
                 var $this = $(this);
@@ -202,7 +202,7 @@ jQuery(function ($) {
     //-------------------------------------------------------
     // about page counter
     //-------------------------------------------------------
-    $('.company-in-number').bind('inview', function(event, visible, visiblePartX, visiblePartY) {
+    $('.company-in-number').bind('inview', function (event, visible, visiblePartX, visiblePartY) {
         if (visible) {
             $(this).find('.timer').each(function () {
                 var $this = $(this);
@@ -229,16 +229,16 @@ jQuery(function ($) {
         }
 
 
-        if( getIEVersion() ){
-            $('html').addClass('ie'+getIEVersion());
+        if (getIEVersion()) {
+            $('html').addClass('ie' + getIEVersion());
         }
 
 
-        if( $('html').hasClass('ie9') || $('html').hasClass('ie10')  ){
+        if ($('html').hasClass('ie9') || $('html').hasClass('ie10')) {
 
-            $('.submenu-wrapper').each(function(){
+            $('.submenu-wrapper').each(function () {
 
-               $(this).addClass('no-pointer-events');
+                $(this).addClass('no-pointer-events');
 
             });
 
@@ -253,19 +253,19 @@ jQuery(function ($) {
     // jQuery for back to Top
     // ------------------------------------------------------------------
 
-    (function(){
+    (function () {
 
-          $('body').append('<div id="toTop"><i class="fa fa-angle-double-up"></i></div>');
+        $('body').append('<div id="toTop"><i class="fa fa-angle-double-up"></i></div>');
 
-            $(window).scroll(function () {
-                if ($(this).scrollTop() != 0) {
-                    $('#toTop').fadeIn();
-                } else {
-                    $('#toTop').fadeOut();
-                }
-            });
+        $(window).scroll(function () {
+            if ($(this).scrollTop() != 0) {
+                $('#toTop').fadeIn();
+            } else {
+                $('#toTop').fadeOut();
+            }
+        });
 
-        $('#toTop').on('click',function(){
+        $('#toTop').on('click', function () {
             $("html, body").animate({ scrollTop: 0 }, 600);
             return false;
         });
@@ -278,11 +278,11 @@ jQuery(function ($) {
     //STELLAR FOR BACKGROUND SCROLLING
     // ------------------------------------------------------------------
 
-    $(window).load(function() {
+    $(window).load(function () {
 
-        if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+        if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
 
-        }else {
+        } else {
             $.stellar({
                 horizontalScrolling: false,
                 responsive: true
@@ -306,16 +306,16 @@ jQuery(function ($) {
         }
 
 
-        if( getIEVersion() ){
-            $('html').addClass('ie'+getIEVersion());
+        if (getIEVersion()) {
+            $('html').addClass('ie' + getIEVersion());
         }
 
 
-        if( $('html').hasClass('ie9') || $('html').hasClass('ie10')  ){
+        if ($('html').hasClass('ie9') || $('html').hasClass('ie10')) {
 
-            $('.submenu-wrapper').each(function(){
+            $('.submenu-wrapper').each(function () {
 
-               $(this).addClass('no-pointer-events');
+                $(this).addClass('no-pointer-events');
 
             });
 
@@ -383,7 +383,7 @@ jQuery(function ($) {
 
     (function () {
 
-        $('#contactForm').on('submit',function(e){
+        $('#contactForm').on('submit', function (e) {
 
             e.preventDefault();
 
@@ -393,16 +393,16 @@ jQuery(function ($) {
 
             $this.prevAll('.alert').remove();
 
-            $.post( $action, $data, function( data ) {
+            $.post($action, $data, function (data) {
 
-                if( data.response=='error' ){
+                if (data.response == 'error') {
 
-                    $this.before( '<div class="alert alert-danger">'+data.message+'</div>' );
+                    $this.before('<div class="alert alert-danger">' + data.message + '</div>');
                 }
 
-                if( data.response=='success' ){
+                if (data.response == 'success') {
 
-                    $this.before( '<div class="alert alert-success">'+data.message+'</div>' );
+                    $this.before('<div class="alert alert-success">' + data.message + '</div>');
                     $this.find('input, textarea').val('');
                 }
 
@@ -421,7 +421,7 @@ jQuery(function ($) {
     var $latitude = 48.869319, //If you unable to find latitude and longitude of your address. Please visit http://www.latlong.net/convert-address-to-lat-long.html you can easily generate.
         $longitude = 2.354261,
         $map_zoom = 16; /* ZOOM SETTING */
-        //google map custom marker icon
+    //google map custom marker icon
     var $marker_url = 'img/map-marker.png';
 
     //we define here the style of the map
@@ -442,33 +442,33 @@ jQuery(function ($) {
     (function () {
 
 
-    if ($('#contactMap').length > 0) {
+        if ($('#contactMap').length > 0) {
 
 
-         //set google map options
-        var map_options = {
-            center: new google.maps.LatLng($latitude, $longitude),
-            zoom: $map_zoom,
-            panControl: true,
-            zoomControl: true,
-            mapTypeControl: false,
-            streetViewControl: true,
-            mapTypeId: google.maps.MapTypeId.ROADMAP,
-            scrollwheel: false,
-            styles: style,
-        }
+            //set google map options
+            var map_options = {
+                center: new google.maps.LatLng(39.978668, 32.871296),
+                zoom: $map_zoom,
+                panControl: true,
+                zoomControl: true,
+                mapTypeControl: false,
+                streetViewControl: true,
+                mapTypeId: google.maps.MapTypeId.ROADMAP,
+                scrollwheel: false,
+                styles: style,
+            }
 
-        //initialize the map
-        var map = new google.maps.Map(document.getElementById('contactMap'), map_options);
-        //add a custom marker to the map
+            //initialize the map
+            var map = new google.maps.Map(document.getElementById('contactMap'), map_options);
+            //add a custom marker to the map
 
-        var marker = new google.maps.Marker({
-            position: new google.maps.LatLng($latitude, $longitude),
-            map: map,
-            visible: true,
-            icon: $marker_url,
-        });
-    };
+            var marker = new google.maps.Marker({
+                position: new google.maps.LatLng(978668, 32.871296),
+                map: map,
+                visible: true,
+                icon: $marker_url,
+            });
+        };
 
     }());
 
@@ -476,38 +476,38 @@ jQuery(function ($) {
     (function () {
 
 
-    if ($('#googleMap').length > 0) {
+        if ($('#googleMap').length > 0) {
 
 
-        //set google map options
-        var map_options = {
-            center: new google.maps.LatLng($latitude, $longitude),
-            zoom: $map_zoom,
-            panControl: true,
-            zoomControl: true,
-            mapTypeControl: false,
-            streetViewControl: true,
-            mapTypeId: google.maps.MapTypeId.ROADMAP,
-            scrollwheel: false,
-            styles: style,
-        }
-        //initialize the map
-        var map = new google.maps.Map(document.getElementById('googleMap'), map_options);
-        //add a custom marker to the map
-        var marker = new google.maps.Marker({
-            position: new google.maps.LatLng($latitude, $longitude),
-            map: map,
-            visible: true,
-            icon: $marker_url,
-        });
+            //set google map options
+            var map_options = {
+                center: new google.maps.LatLng($latitude, $longitude),
+                zoom: $map_zoom,
+                panControl: true,
+                zoomControl: true,
+                mapTypeControl: false,
+                streetViewControl: true,
+                mapTypeId: google.maps.MapTypeId.ROADMAP,
+                scrollwheel: false,
+                styles: style,
+            }
+            //initialize the map
+            var map = new google.maps.Map(document.getElementById('googleMap'), map_options);
+            //add a custom marker to the map
+            var marker = new google.maps.Marker({
+                position: new google.maps.LatLng($latitude, $longitude),
+                map: map,
+                visible: true,
+                icon: $marker_url,
+            });
 
-        $('#cssMapModal').on('shown.bs.modal', function(){
+            $('#cssMapModal').on('shown.bs.modal', function () {
 
-         google.maps.event.trigger(map, 'resize');
-         map.setCenter(new google.maps.LatLng($latitude, $longitude));
-       });
+                google.maps.event.trigger(map, 'resize');
+                map.setCenter(new google.maps.LatLng($latitude, $longitude));
+            });
 
-       };
+        };
 
     }());
 
