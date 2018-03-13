@@ -255,7 +255,6 @@
     <Content Include="owl.carousel\assets\owl.carousel.css" />
     <Content Include="owl.carousel\owl.carousel.js" />
     <Content Include="owl.carousel\owl.carousel.min.js" />
-    <Content Include="service.html" />
     <Content Include="shipping.html" />
     <Content Include="transportation.html" />
     <Content Include="trucking.html" />
