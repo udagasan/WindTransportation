@@ -76,7 +76,6 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="about-member.html" />
     <Content Include="about.html" />
     <Content Include="air.html" />
     <Content Include="blog.html" />
@@ -212,7 +211,6 @@
     <Content Include="img\trans.jpg" />
     <Content Include="img\zoomin.png" />
     <Content Include="index.html" />
-    <Content Include="job-post.html" />
     <Content Include="js\bootstrap.min.js" />
     <Content Include="js\classie.js" />
     <Content Include="js\flickerPhoto.min.js" />
