@@ -8,9 +8,9 @@
  *  Github: https://github.com/jasonmayes/Twitter-Post-Fetcher
  *  Updates will be posted to this site.
  *********************************************************************/
-var twitterFetcher = function() {
+var twitterFetcher = function () {
     function w(a) {
-        return a.replace(/<b[^>]*>(.*?)<\/b>/gi, function(a, f) { return f })
+        return a.replace(/<b[^>]*>(.*?)<\/b>/gi, function (a, f) { return f })
             .replace(/class=".*?"|data-query-source=".*?"|dir=".*?"|rel=".*?"/gi, "")
     }
     function m(a, c) {
@@ -20,8 +20,8 @@ var twitterFetcher = function() {
         return f
     }
     var x = "", k = 20, y = !0, p = [], s = !1, q = !0, r = !0, t = null, u = !0, z = !0, v = null, A = !0, B = !1;
-    return{
-        fetch: function(a) {
+    return {
+        fetch: function (a) {
             void 0 === a.maxTweets && (a.maxTweets = 20);
             void 0 === a.enableLinks &&
                 (a.enableLinks = !0);
@@ -56,14 +56,14 @@ var twitterFetcher = function() {
                 document.getElementsByTagName("head")[0].appendChild(c)
             }
         },
-        callback: function(a) {
+        callback: function (a) {
             var c = document.createElement("div");
             c.innerHTML = a.body;
             "undefined" === typeof c.getElementsByClassName && (u = !1);
             a = [];
             var f = [], g = [], h = [], b = [], n = [], e = 0;
             if (u)
-                for (c = c.getElementsByClassName("tweet");
+                for (c = c.getElementsByClassName("tweet") ;
                 e <
                     c.length;
                 ) {
@@ -79,7 +79,7 @@ var twitterFetcher = function() {
                     e++
                 }
             else
-                for (c = m(c, "tweet"); e < c.length;)
+                for (c = m(c, "tweet") ; e < c.length;)
                     a.push(m(c[e], "e-entry-title")[0]),
                         n.push(c[e].getAttribute("data-tweet-id")), f.push(m(c[e], "p-author")[0]),
                         g.push(m(c[e], "dt-updated")[0]), void 0 !== m(c[e], "inline-media")[0]
@@ -131,7 +131,7 @@ var twitterFetcher = function() {
                     (l = h[b], void 0 !== l
                         ? (l = l.innerHTML.match(/data-srcset="([A-z0-9%_\.-]+)/i)[0], l =
                             decodeURIComponent(l).split('"')[1])
-                        : l = void 0, d += '<div class="media"><img src="' + l + '" alt="Image from tweet" /></div>');
+                        : l = void 0, d += '<div class="media"><img src="' + l + '" alt="Keçiören evden eve nakliyat" /></div>');
                 c.push(d);
                 b++
             }
