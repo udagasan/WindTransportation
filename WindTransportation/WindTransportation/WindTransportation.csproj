@@ -76,10 +76,10 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="about.html" />
-    <Content Include="air.html" />
+    <Content Include="hakkimizda.html" />
+    <Content Include="Evden-Eve-Nakliyat.html" />
     <Content Include="blog.html" />
-    <Content Include="contact.html" />
+    <Content Include="iletisim.html" />
     <Content Include="css\animate.css" />
     <Content Include="css\blog.css" />
     <Content Include="css\bootstrap.min.css" />
@@ -94,7 +94,7 @@
     <Content Include="css\typography.css" />
     <Content Include="css\YTPlayer.css" />
     <Content Include="email-templates\simple.html" />
-    <Content Include="faq.html" />
+    <Content Include="Sikca-Sorulan-Sorular.html" />
     <Content Include="fonts\flaticon\flaticon.css" />
     <Content Include="fonts\flaticon\flaticon.html" />
     <Content Include="fonts\flaticon\flaticon.svg" />
@@ -232,15 +232,15 @@
     <Content Include="js\vendor\html5shim.js" />
     <Content Include="js\vendor\modernizr-2.8.1.min.js" />
     <Content Include="js\vendor\respond.min.js" />
-    <Content Include="marine.html" />
-    <Content Include="moving.html" />
-    <Content Include="our-people.html" />
+    <Content Include="Paketleme-Islemi.html" />
+    <Content Include="Depolama-Islemi.html" />
+    <Content Include="Calisanlarimiz.html" />
     <Content Include="owl.carousel\assets\owl.carousel.css" />
     <Content Include="owl.carousel\owl.carousel.js" />
     <Content Include="owl.carousel\owl.carousel.min.js" />
-    <Content Include="shipping.html" />
-    <Content Include="transportation.html" />
-    <Content Include="trucking.html" />
+    <Content Include="Motaj-ve-Demontaj-Islemleri.html" />
+    <Content Include="Asansorlu-Tasimacilik.html" />
+    <Content Include="Sehirler-Arasi-Nakliyat.html" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
