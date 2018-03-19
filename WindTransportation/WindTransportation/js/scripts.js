@@ -1,4 +1,4 @@
-jQuery(function($) {
+jQuery(function ($) {
 
     "use strict";
 
@@ -6,7 +6,7 @@ jQuery(function($) {
      * Preloader
     /* ---------------------------------------------- */
 
-    $(function() {
+    $(function () {
         $("#status").fadeOut();
         $("#preloader").delay(200).fadeOut("slow");
 
@@ -17,11 +17,11 @@ jQuery(function($) {
     // Sticky Menu
     // -------------------------------------------------------------
 
-    (function() {
+    (function () {
         var nav = $(".navbar");
         var scrolled = false;
 
-        $(window).scroll(function() {
+        $(window).scroll(function () {
 
             if (110 < $(window).scrollTop() && !scrolled) {
                 nav.addClass("sticky animated fadeInDown").animate({ 'margin-top': "0px" });
@@ -43,7 +43,7 @@ jQuery(function($) {
     // Sticky Elements
     // -------------------------------------------------------------
 
-    $(function() {
+    $(function () {
 
         $(".sticky-div").stick_in_parent({
             container: $(".sticky-container"),
@@ -58,16 +58,16 @@ jQuery(function($) {
     // Menu Search Button
     // -------------------------------------------------------------
 
-    $(function() {
+    $(function () {
         $('a[href="#search"]').on("click",
-            function(event) {
+            function (event) {
                 event.preventDefault();
                 $("#search").addClass("open");
                 $('#search > form > input[type="search"]').focus();
             });
 
         $("#search, #search button.close").on("click keyup",
-            function(event) {
+            function (event) {
                 if (event.target == this || event.target.className == "close" || event.keyCode == 27) {
                     $(this).removeClass("open");
                 }
@@ -80,7 +80,7 @@ jQuery(function($) {
     // Magnific  Popup
     // -------------------------------------------------------------
 
-    (function() {
+    (function () {
         $(".img-link").magnificPopup({
             gallery: {
                 enabled: true
@@ -97,8 +97,8 @@ jQuery(function($) {
     // Language Select JS
     // -------------------------------------------------------------
 
-    (function() {
-        [].slice.call(document.querySelectorAll("select.cs-select")).forEach(function(el) {
+    (function () {
+        [].slice.call(document.querySelectorAll("select.cs-select")).forEach(function (el) {
             new SelectFx(el);
         });
     })();
@@ -108,7 +108,7 @@ jQuery(function($) {
     // OffCanvas
     // -------------------------------------------------------------
 
-    (function() {
+    (function () {
         $("button.navbar-toggle").HippoOffCanvasMenu({
             documentWrapper: "#st-container",
             contentWrapper: ".st-content",
@@ -124,7 +124,7 @@ jQuery(function($) {
         $("#offcanvasMenu li:has(ul) > a").append(ico);
 
         $("#offcanvasMenu > li:has(ul)").on("click",
-            function() {
+            function () {
                 $(this).toggleClass("open");
             });
     }());
@@ -134,7 +134,7 @@ jQuery(function($) {
     // Partner Carousel
     // -------------------------------------------------------------
 
-    (function() {
+    (function () {
 
         $(".partner-carousel").owlCarousel({
             loop: true,
@@ -159,13 +159,13 @@ jQuery(function($) {
 
         // Go to the next item
         $(".partner-carousel-navigation .next").on("click",
-            function() {
+            function () {
                 owl.trigger("next.owl.carousel");
             });
 
         // Go to the previous item
         $(".partner-carousel-navigation .prev").on("click",
-            function() {
+            function () {
                 owl.trigger("prev.owl.carousel", [300]);
             });
 
@@ -177,15 +177,15 @@ jQuery(function($) {
     // counter
     //-------------------------------------------------------
     $(".count-description").bind("inview",
-        function(event, visible, visiblePartX, visiblePartY) {
+        function (event, visible, visiblePartX, visiblePartY) {
             if (visible) {
-                $(this).find(".timer").each(function() {
+                $(this).find(".timer").each(function () {
                     var $this = $(this);
                     $({ Counter: 0 }).animate({ Counter: $this.text() },
                         {
                             duration: 2000,
                             easing: "swing",
-                            step: function() {
+                            step: function () {
                                 $this.text(Math.ceil(this.Counter));
                             }
                         });
@@ -199,15 +199,15 @@ jQuery(function($) {
     // about page counter
     //-------------------------------------------------------
     $(".company-in-number").bind("inview",
-        function(event, visible, visiblePartX, visiblePartY) {
+        function (event, visible, visiblePartX, visiblePartY) {
             if (visible) {
-                $(this).find(".timer").each(function() {
+                $(this).find(".timer").each(function () {
                     var $this = $(this);
                     $({ Counter: 0 }).animate({ Counter: $this.text() },
                         {
                             duration: 2000,
                             easing: "swing",
-                            step: function() {
+                            step: function () {
                                 $this.text(Math.ceil(this.Counter));
                             }
                         });
@@ -220,7 +220,7 @@ jQuery(function($) {
     // -------------------------------------------------------------
     // Detect IE version
     // -------------------------------------------------------------
-    (function() {
+    (function () {
         function getIEVersion() {
             var match = navigator.userAgent.match(/(?:MSIE |Trident\/.*; rv:)(\d+)/);
             return match ? parseInt(match[1]) : false;
@@ -234,7 +234,7 @@ jQuery(function($) {
 
         if ($("html").hasClass("ie9") || $("html").hasClass("ie10")) {
 
-            $(".submenu-wrapper").each(function() {
+            $(".submenu-wrapper").each(function () {
 
                 $(this).addClass("no-pointer-events");
 
@@ -249,11 +249,11 @@ jQuery(function($) {
     // jQuery for back to Top
     // ------------------------------------------------------------------
 
-    (function() {
+    (function () {
 
         $("body").append('<div id="toTop"><i class="fa fa-angle-double-up"></i></div>');
 
-        $(window).scroll(function() {
+        $(window).scroll(function () {
             if ($(this).scrollTop() != 0) {
                 $("#toTop").fadeIn();
             } else {
@@ -262,7 +262,7 @@ jQuery(function($) {
         });
 
         $("#toTop").on("click",
-            function() {
+            function () {
                 $("html, body").animate({ scrollTop: 0 }, 600);
                 return false;
             });
@@ -274,7 +274,7 @@ jQuery(function($) {
     //STELLAR FOR BACKGROUND SCROLLING
     // ------------------------------------------------------------------
 
-    $(window).load(function() {
+    $(window).load(function () {
 
         if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
 
@@ -293,7 +293,7 @@ jQuery(function($) {
     // ----------------------------------------------------------------
 
 
-    (function() {
+    (function () {
 
 
         function getIEVersion() {
@@ -309,7 +309,7 @@ jQuery(function($) {
 
         if ($("html").hasClass("ie9") || $("html").hasClass("ie10")) {
 
-            $(".submenu-wrapper").each(function() {
+            $(".submenu-wrapper").each(function () {
 
                 $(this).addClass("no-pointer-events");
 
@@ -321,7 +321,7 @@ jQuery(function($) {
         var timer;
 
         $("li.dropdown").on("mouseenter",
-            function(event) {
+            function (event) {
 
 
                 event.stopImmediatePropagation();
@@ -337,12 +337,12 @@ jQuery(function($) {
                 }
 
 
-                timer = setTimeout(function() {
+                timer = setTimeout(function () {
 
-                        $(that).removeClass("menu-animating");
-                        $(that).addClass("open");
+                    $(that).removeClass("menu-animating");
+                    $(that).addClass("open");
 
-                    },
+                },
                     300); // 300ms as animation end time
 
 
@@ -351,7 +351,7 @@ jQuery(function($) {
         // on mouse leave
 
         $("li.dropdown").on("mouseleave",
-            function(event) {
+            function (event) {
 
                 var that = this;
 
@@ -363,12 +363,12 @@ jQuery(function($) {
                     timer = null;
                 }
 
-                timer = setTimeout(function() {
+                timer = setTimeout(function () {
 
-                        $(that).removeClass("menu-animating");
-                        $(that).removeClass("open");
+                    $(that).removeClass("menu-animating");
+                    $(that).removeClass("open");
 
-                    },
+                },
                     300); // 300ms as animation end time
 
             });
@@ -380,10 +380,10 @@ jQuery(function($) {
     //CONTACT FORM
     // ------------------------------------------------------------------
 
-    (function() {
+    (function () {
 
         $("#contactForm").on("submit",
-            function(e) {
+            function (e) {
 
                 e.preventDefault();
 
@@ -395,7 +395,7 @@ jQuery(function($) {
 
                 $.post($action,
                     $data,
-                    function(data) {
+                    function (data) {
 
                         if (data.response == "error") {
 
@@ -446,7 +446,7 @@ jQuery(function($) {
 
     //Contact page map
 
-    (function() {
+    (function () {
 
 
         if ($("#contactMap").length > 0) {
@@ -462,7 +462,7 @@ jQuery(function($) {
                 streetViewControl: true,
                 mapTypeId: google.maps.MapTypeId.ROADMAP,
                 scrollwheel: false,
-                styles: style,
+                styles: style
             };
 
             //initialize the map
@@ -480,7 +480,7 @@ jQuery(function($) {
     }());
 
     //Modal map
-    (function() {
+    (function () {
 
 
         if ($("#googleMap").length > 0) {
@@ -509,7 +509,7 @@ jQuery(function($) {
             });
 
             $("#cssMapModal").on("shown.bs.modal",
-                function() {
+                function () {
 
                     google.maps.event.trigger(map, "resize");
                     map.setCenter(new google.maps.LatLng($latitude, $longitude));
@@ -521,7 +521,7 @@ jQuery(function($) {
 
 
     // Twitter Feed on Footer Widget
-    (function() {
+    (function () {
         var twitterConfig = {
             id: "567185781790228482", //put your Widget ID here
             domId: "twitterWidget",
