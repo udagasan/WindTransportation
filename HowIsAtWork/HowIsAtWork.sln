@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HowIsAtWork", "HowIsAtWork\HowIsAtWork.csproj", "{F9DA7426-BA19-485B-B218-1B0E007A2E60}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HowIsAtWork.Tests", "HowIsAtWork.Tests\HowIsAtWork.Tests.csproj", "{0DC6596F-202E-4633-8495-481BECB55397}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F9DA7426-BA19-485B-B218-1B0E007A2E60}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F9DA7426-BA19-485B-B218-1B0E007A2E60}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F9DA7426-BA19-485B-B218-1B0E007A2E60}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F9DA7426-BA19-485B-B218-1B0E007A2E60}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0DC6596F-202E-4633-8495-481BECB55397}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0DC6596F-202E-4633-8495-481BECB55397}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0DC6596F-202E-4633-8495-481BECB55397}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0DC6596F-202E-4633-8495-481BECB55397}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
