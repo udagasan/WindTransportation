@@ -1,0 +1,9 @@
+﻿User-agent: *
+Disallow: /email-templates/
+Disallow: /fonts/
+Disallow: /img/			
+Disallow: /owl.carousel/
+Disallow: /İnfo.txt			
+Disallow: /packages.config					
+
+Sitemap: http://keciorenruzgarnakliyat.com/sitemap.xml
