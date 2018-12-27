@@ -1,0 +1,17 @@
+    foreach (var item in vaitingProcess.Value)
+            {
+
+                var cont = Mapper.Map<ClearingFilesContract>(item);
+                if (item.ProcessingStatus == "S")
+                {
+                    cont.IsProceeding = true;
+                }
+
+                if (item.ProcessingStatus == "Y")
+                {
+                    cont.IsProcessFinish = true;
+                    if (item.TransferIndicator == "N")
+                    {
+                        request.CanCardTransfer = true;
+                    }
+                }
